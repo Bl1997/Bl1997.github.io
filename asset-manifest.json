@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.861688d8.css",
+    "main.js": "/static/js/main.daaa2ec6.js",
+    "static/media/Bihari_Yadav_Resume.pdf": "/static/media/Bihari_Yadav_Resume.9e69708afc6192ec64ef.pdf",
+    "index.html": "/index.html",
+    "main.861688d8.css.map": "/static/css/main.861688d8.css.map",
+    "main.daaa2ec6.js.map": "/static/js/main.daaa2ec6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.861688d8.css",
+    "static/js/main.daaa2ec6.js"
+  ]
+}
