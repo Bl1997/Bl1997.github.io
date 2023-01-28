@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.d3e31b7d.css",
-    "main.js": "/static/js/main.a5b635f9.js",
+    "main.js": "/static/js/main.b3124c68.js",
     "static/media/Bihari_Yadav_Resume.pdf": "/static/media/Bihari_Yadav_Resume.0bda00ab88e56f406993.pdf",
     "index.html": "/index.html",
     "main.d3e31b7d.css.map": "/static/css/main.d3e31b7d.css.map",
-    "main.a5b635f9.js.map": "/static/js/main.a5b635f9.js.map"
+    "main.b3124c68.js.map": "/static/js/main.b3124c68.js.map"
   },
   "entrypoints": [
     "static/css/main.d3e31b7d.css",
-    "static/js/main.a5b635f9.js"
+    "static/js/main.b3124c68.js"
   ]
 }
