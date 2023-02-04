@@ -93,15 +93,15 @@ export default function Projects() {
 
                     zIndex: -1,
                   }}
-                  class="project-title">
+                  className="project-title">
                   Jefit-Clone
                 </Text>
                 <br />
               </Heading>
-              <Text color={"white"} width="350px" fontWeight={"semibold"} class="project-description">
+              <div class="project-description"><Text color={"white"} width="350px" fontWeight={"semibold"} >
                 JEFIT COVERS ALL OF YOUR WORKOUT NEEDS. JEFIT is a Individual
                 Project made in 5 days.
-              </Text>
+              </Text></div>
               <Stack direction="row">
                 <Badge
                   color={"#F85700"}
@@ -125,7 +125,7 @@ export default function Projects() {
                 </Badge>
               </Stack>
 
-              <Stack direction="row"  class="project-tech-stack">
+              <Stack direction="row"  className="project-tech-stack">
                 <Badge
                   color={"white"}
                   padding={"2px"}
@@ -219,7 +219,7 @@ export default function Projects() {
                   rounded={"full"}
                   _hover={{ bg: "#EF5400", color: "white" }}
                   rightIcon={<BsLink45Deg />}
-                  class="project-deployed-link">
+                  className="project-deployed-link">
                   <Link
                     _hover={{ textDecoration: "none" }}
                     target="#"
@@ -342,7 +342,7 @@ export default function Projects() {
                 </Badge>
               </Stack>
 
-              <Stack direction="row"  class="project-tech-stack">
+              <Stack direction="row"  className="project-tech-stack">
                 <Badge
                   color={"white"}
                   padding={"2px"}
@@ -418,12 +418,12 @@ export default function Projects() {
 
                     zIndex: -1,
                   }}
-                  class="project-title">
+                  className="project-title">
                   Gearbest-Clone
                 </Text>
                 <br />
               </Heading>
-              <Text color={"white"} width="350px" fontWeight={"semibold"}  class="project-description">
+              <Text color={"white"} width="350px" fontWeight={"semibold"}  className="project-description">
                 Gearbest is a big Chinese e-commerce store that sells a plethora
                 of products. Gearbest is a Collaborative Project made in 5 days.
               </Text>
@@ -438,7 +438,7 @@ export default function Projects() {
                   color={"white"}
                   _hover={{ bg: "white", color: "#EF5400" }}
                   rightIcon={<BsGithub />}
-                  class="project-github-link">
+                  className="project-github-link">
                   <Link
                     _hover={{ textDecoration: "none" }}
                     target="_blank"
@@ -455,7 +455,7 @@ export default function Projects() {
                   rounded={"full"}
                   _hover={{ bg: "#EF5400", color: "white" }}
                   rightIcon={<BsLink45Deg />}
-                  class="project-deployed-link">
+                  className="project-deployed-link">
                   <Link
                     _hover={{ textDecoration: "none" }}
                     target="#"
@@ -546,12 +546,12 @@ export default function Projects() {
 
                     zIndex: -1,
                   }}
-                  class="project-title">
+                  className="project-title">
                   Tripoto Clone
                 </Text>
                 <br />
               </Heading>
-              <Text color={"white"} width="350px" fontWeight={"semibold"} class="project-description">
+              <Text color={"white"} width="350px" fontWeight={"semibold"} className="project-description">
                 Tripoto is one of the largest communities of Travelers in the
                 world. We are crowd-sourcing amazing travel itineraries from
                 around the world.
@@ -579,7 +579,7 @@ export default function Projects() {
                 </Badge>
               </Stack>
 
-              <Stack direction="row" class="project-tech-stack">
+              <Stack direction="row" className="project-tech-stack">
                 <Badge
                   color={"white"}
                   padding={"2px"}
@@ -645,7 +645,7 @@ export default function Projects() {
                   color={"white"}
                   _hover={{ bg: "white", color: "#EF5400" }}
                   rightIcon={<BsGithub />}
-                  class="project-github-link">
+                  className="project-github-link">
                   <Link
                     _hover={{ textDecoration: "none" }}
                     target="_blank"
@@ -662,7 +662,7 @@ export default function Projects() {
                   rounded={"full"}
                   _hover={{ bg: "#EF5400", color: "white" }}
                   rightIcon={<BsLink45Deg />}
-                  class="project-deployed-link">
+                  className="project-deployed-link">
                   <Link
                     _hover={{ textDecoration: "none" }}
                     target="#"
@@ -715,12 +715,12 @@ export default function Projects() {
 
                     zIndex: -1,
                   }}
-                  class="project-title">
+                  className="project-title">
                   Hotstar-Clone
                 </Text>
                 <br />
               </Heading>
-              <Text color={"white"} width="350px" fontWeight={"semibold"} class="project-description">
+              <Text color={"white"} width="350px" fontWeight={"semibold"} className="project-description">
                 Hotstar is a Entertainment platform site. Hotstar is a
                 Individual Project.
               </Text>
@@ -747,7 +747,7 @@ export default function Projects() {
                 </Badge>
               </Stack>
 
-              <Stack direction="row" class="project-tech-stack">
+              <Stack direction="row" className="project-tech-stack">
                 <Badge
                   color={"white"}
                   padding={"2px"}
@@ -822,7 +822,7 @@ export default function Projects() {
                   color={"white"}
                   _hover={{ bg: "white", color: "#EF5400" }}
                   rightIcon={<BsGithub />}
-                  class="project-github-link">
+                  className="project-github-link">
                   <Link
                     _hover={{ textDecoration: "none" }}
                     target="_blank"
@@ -841,7 +841,7 @@ export default function Projects() {
                   rounded={"full"}
                   _hover={{ bg: "#EF5400", color: "white" }}
                   rightIcon={<BsLink45Deg />}
-                  class="project-deployed-link">
+                  className="project-deployed-link">
                   <Link
                     _hover={{ textDecoration: "none" }}
                     target="#"
