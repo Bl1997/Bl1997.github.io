@@ -12,20 +12,20 @@ const About = () => {
   }
 
   return (
-    <div>
+    <div id='about' className='about section'>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5}>
         {/* <Box display={"grid"} gap="100px" > */}
   <Box>
-  <Text  fontSize={"4xl"} color={"#F86515"} fontWeight="bold">Hello, I'm Bihari Yadav</Text>
-  <Text color={"grey"} fontSize="2xl" fontWeight={"bold"} >A Full Stack Developer</Text>
-  <Text color={"skyblue"} fontSize="larger">Design is not just what it look like, Design is how it works!</Text>
-  <Text color={"white"}>A good Software Developer will have a deep understanding of programming languages and the software development life-cycle, as well as excellent analytical abilities and problem-solving skills.
+  <Text  fontSize={"4xl"} color={"#F86515"} fontWeight="bold"  id="user-detail-name">Hello, I'm Bihari Yadav</Text>
+  <Text color={"grey"} fontSize="2xl" fontWeight={"bold"} id="user-detail-intro">A Full Stack Developer</Text>
+  <Text color={"skyblue"} fontSize="larger" id="user-detail-intro">Design is not just what it look like, Design is how it works!</Text>
+  <Text color={"white"} id="user-detail-intro">A good Software Developer will have a deep understanding of programming languages and the software development life-cycle, as well as excellent analytical abilities and problem-solving skills.
   I want to achieve global recognition
               and exposure with my skillset, toolset and mindset.
 
   </Text>
   <Box display={"flex"} gap="20px" marginTop={"50px"} marginLeft="20px">
-    <Button onClick={handleRes} bgColor={"#F86515"} color="white" padding={"8px"} fontSize="larger" fontWeight={"semibold"} borderRadius="10px" _hover={{color:"#F86515" ,bgColor:"white"}} >
+    <Button onClick={handleRes} bgColor={"#F86515"} color="white" padding={"8px"} fontSize="larger" fontWeight={"semibold"} borderRadius="10px" _hover={{color:"#F86515" ,bgColor:"white"}} id="resume-button-2">
        <Resume/>
     </Button>
     <Button  bgColor={"white"} color="#F86515" padding={"8px"} fontSize="larger" fontWeight={"semibold" }  borderRadius="10px" _hover={{color:"white" ,bgColor:"#F86515"}} >

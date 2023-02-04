@@ -1,42 +1,66 @@
 import {
-    Container,
-    Flex,
-    Box,
-    Heading,
-    Text,
-    IconButton,
-    Button,
-    VStack,
-    HStack,
-    Wrap,
-    WrapItem,
-    FormControl,
-    FormLabel,
-    Input,
-    InputGroup,
-    InputLeftElement,
-    Textarea,
-  } from '@chakra-ui/react';
-  import {
-    MdPhone,
-    MdEmail,
-    MdLocationOn,
-    MdFacebook,
-    MdOutlineEmail,
-  } from 'react-icons/md';
-  import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
-  
-  export default function Contact() {
-    return (
-      <Container bg="#000F43" maxW="full" mt={0} centerContent overflow="hidden">
-         <Text fontStyle={"oblique"} fontSize="3xl" fontWeight={"bold"} textAlign="center" width="200px" borderBottom={"2px solid #F86515 "} borderRadius={"5px"} color="#F86515" t>Contact</Text>
+  Container,
+  Flex,
+  Box,
+  Heading,
+  Text,
+  IconButton,
+  Button,
+  VStack,
+  HStack,
+  Wrap,
+  WrapItem,
+  FormControl,
+  FormLabel,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  Textarea,
+} from "@chakra-ui/react";
+import {
+  MdPhone,
+  MdEmail,
+  MdLocationOn,
+ 
+  MdOutlineEmail,
+} from "react-icons/md";
+
+import { SiLinkedin} from "react-icons/si"
+import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
+
+
+
+export default function Contact() {
+  return (
+    <div id="contact">
+      <Container
+        bg="#000F43"
+        maxW="full"
+        mt={0}
+        centerContent
+        overflow="hidden"
+      >
+        <Text
+          fontStyle={"oblique"}
+          fontSize="3xl"
+          fontWeight={"bold"}
+          textAlign="center"
+          width="200px"
+          borderBottom={"2px solid #F86515 "}
+          borderRadius={"5px"}
+          color="#F86515"
+          t
+        >
+          Contact
+        </Text>
         <Flex>
           <Box
             bg="#121A36"
             color="white"
             borderRadius="lg"
             m={{ sm: 4, md: 16, lg: 10 }}
-            p={{ sm: 5, md: 5, lg: 16 }}>
+            p={{ sm: 5, md: 5, lg: 16 }}
+          >
             <Box p={4}>
               <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
                 <WrapItem>
@@ -53,8 +77,9 @@ import {
                           width="200px"
                           variant="ghost"
                           color="#DCE2FF"
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdPhone color="#1970F1" size="20px" />}>
+                          _hover={{ border: "2px solid #1C6FEB" }}
+                          leftIcon={<MdPhone color="#1970F1" size="20px" />}
+                          id="contact-phone">
                           +91-9516639406
                         </Button>
                         <Button
@@ -63,9 +88,10 @@ import {
                           width="200px"
                           variant="ghost"
                           color="#DCE2FF"
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                         yadav06bihari@gmail.com
+                          _hover={{ border: "2px solid #1C6FEB" }}
+                          leftIcon={<MdEmail color="#1970F1" size="20px" id="contact-email"/>}
+                        >
+                          yadav06bihari@gmail.com
                         </Button>
                         <Button
                           size="md"
@@ -73,8 +99,11 @@ import {
                           width="200px"
                           variant="ghost"
                           color="#DCE2FF"
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
+                          _hover={{ border: "2px solid #1C6FEB" }}
+                          leftIcon={
+                            <MdLocationOn color="#1970F1" size="20px" />
+                          }
+                        >
                           Madhya Pradesh, India
                         </Button>
                       </VStack>
@@ -83,29 +112,33 @@ import {
                       mt={{ lg: 10, md: 10 }}
                       spacing={5}
                       px={5}
-                      alignItems="flex-start">
-                      <IconButton
-                        aria-label="facebook"
+                      alignItems="flex-start"
+                    >
+                      <a href="https://www.linkedin.com/in/bihari-lal-2a97a1236/"><IconButton
+                        aria-label="linkedIn"
                         variant="ghost"
                         size="lg"
                         isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
-                        icon={<MdFacebook size="28px" />}
-                      />
-                     <a href="https://github.com/Bl1997"> <IconButton
-                        aria-label="github"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
-                        icon={<BsGithub size="28px" />}
+                        _hover={{ bg: "#0D74FF" }}
+                        icon={<SiLinkedin size="28px" id="contact-linkedin"/>}
                       /></a>
+                      <a href="https://github.com/Bl1997">
+                        {" "}
+                        <IconButton
+                          aria-label="github"
+                          variant="ghost"
+                          size="lg"
+                          isRound={true}
+                          _hover={{ bg: "#0D74FF" }}
+                          icon={<BsGithub size="28px"  id="contact-github"/>}
+                        />
+                      </a>
                       <IconButton
                         aria-label="discord"
                         variant="ghost"
                         size="lg"
                         isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
+                        _hover={{ bg: "#0D74FF" }}
                         icon={<BsDiscord size="28px" />}
                       />
                     </HStack>
@@ -122,7 +155,12 @@ import {
                               pointerEvents="none"
                               children={<BsPerson color="teal" />}
                             />
-                            <Input type="text" size="md"  border={"1px solid teal" } borderRadius="5px" />
+                            <Input
+                              type="text"
+                              size="md"
+                              border={"1px solid teal"}
+                              borderRadius="5px"
+                            />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
@@ -132,15 +170,22 @@ import {
                               pointerEvents="none"
                               children={<MdOutlineEmail color="teal" />}
                             />
-                            <Input type="text" size="md" border={"1px solid teal" } borderRadius="5px" />
+                            <Input
+                              type="text"
+                              size="md"
+                              border={"1px solid teal"}
+                              borderRadius="5px"
+                            />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
                           <FormLabel>Message</FormLabel>
-                          <Textarea  border={"1px solid teal" } borderRadius="5px"
+                          <Textarea
+                            border={"1px solid teal"}
+                            borderRadius="5px"
                             borderColor="gray.300"
                             _hover={{
-                              borderRadius: 'gray.300',
+                              borderRadius: "gray.300",
                             }}
                             placeholder="message"
                           />
@@ -150,7 +195,8 @@ import {
                             variant="solid"
                             bg="#0D74FF"
                             color="white"
-                            _hover={{}}>
+                            _hover={{}}
+                          >
                             Send Message
                           </Button>
                         </FormControl>
@@ -163,5 +209,6 @@ import {
           </Box>
         </Flex>
       </Container>
-    );
-  }
+    </div>
+  );
+}

@@ -61,7 +61,7 @@ export default function Navbar() {
   
 
   return (
-    <>
+   <div id="nav-menu">
       <Box bg={useColorModeValue("#232041")} borderBottom="1px solid gray" color="white" px={6} fontSize="xl" fontWeight={"semibold"} position="fixed" width="100%" overflow={"hidden"}  >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
@@ -114,7 +114,7 @@ export default function Navbar() {
    
           <Button
              fontWeight="semibold" fontSize={"large"}
-            >
+             class="nav-link contact" >
               <Link
                 style={{ cursor: "pointer" }}
                 px={2}
@@ -138,7 +138,7 @@ export default function Navbar() {
 
             </Button>
 
-            <Button onClick={handleRes} fontWeight="semibold" fontSize={"larger"} ><Resume/></Button>
+            <Button onClick={handleRes} fontWeight="semibold" fontSize={"larger"}  class="nav-link resume" id="resume-button-1"><Resume/></Button>
             <Menu>
               <MenuButton
                 as={Button}
@@ -170,6 +170,6 @@ export default function Navbar() {
       </Box>
 
       <Box p={4}></Box>
-    </>
+      </div>
   );
 }

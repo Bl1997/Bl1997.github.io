@@ -4,7 +4,7 @@ import React from 'react'
 
 const Education = () => {
   return (
-    <div>
+    <div id="skills">
        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={50}>
         <Box>
         <Box >
